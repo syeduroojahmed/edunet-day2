@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            display: none; /* Initially hidden */
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        .product h2 {
+            margin: 0 0 10px;
+        }
+        .product .price {
+            color: green;
+            font-weight: bold;
+        }
+        .product ul {
+            padding-left: 20px;
+        }
+        .close-btn {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            float: right;
+        }
+        .close-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce Store</h1>
+    </header>
+    <nav>
+        <a onclick="showCategory('electronics')">Electronics</a>
+        <a onclick="showCategory('furniture')">Furniture</a>
+        <a onclick="showCategory('clothing')">Clothing</a>
+    </nav>
+    <div class="container" id="electronics">
+        <button class="close-btn" onclick="hideCategory()">Close</button>
+        <h2>Electronics</h2>
+        <div class="product">
+            <h2>Smartphone</h2>
+            <p class="price">$499.99</p>
+            <p>A high-quality smartphone with stunning features.</p>
+            <ul>
+                <li>6.5-inch display</li>
+                <li>128GB storage</li>
+                <li>Quad-camera setup</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="furniture">
+        <button class="close-btn" onclick="hideCategory()">Close</button>
+        <h2>Furniture</h2>
+        <div class="product">
+            <h2>Office Chair</h2>
+            <p class="price">$89.99</p>
+            <p>Ergonomic office chair with adjustable height and back support.</p>
+            <ul>
+                <li>Comfortable padding</li>
+                <li>360-degree swivel</li>
+                <li>Durable build</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="clothing">
+        <button class="close-btn" onclick="hideCategory()">Close</button>
+        <h2>Clothing</h2>
+        <div class="product">
+            <h2>Men's Jacket</h2>
+            <p class="price">$59.99</p>
+            <p>A stylish jacket to keep you warm and fashionable.</p>
+            <ul>
+                <li>Water-resistant material</li>
+                <li>Multiple pockets</li>
+                <li>Available in various sizes</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showCategory(categoryId) {
+            // Hide all containers
+            const containers = document.querySelectorAll('.container');
+            containers.forEach(container => container.style.display = 'none');
+            
+            // Show the selected category
+            const categoryContainer = document.getElementById(categoryId);
+            if (categoryContainer) {
+                categoryContainer.style.display = 'block';
+            }
+        }
+
+        function hideCategory() {
+            // Hide all containers
+            const containers = document.querySelectorAll('.container');
+            containers.forEach(container => container.style.display = 'none');
+        }
+    </script>
+</body>
+</html>
+

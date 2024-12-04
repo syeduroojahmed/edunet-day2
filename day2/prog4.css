@@ -1,0 +1,16 @@
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black; /* Default text color for all paragraphs */
+    margin-bottom: 10px;
+}
+
+/* Class Selector */
+.highlight {
+    color: blue; /* Blue text color for paragraphs with class "highlight" */
+}
+
+/* ID Selector */
+#special-paragraph {
+    color: green; /* Green text color for the paragraph with ID "special-paragraph" */
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ebebe5;
+            background-color: #222;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: orangered;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #111;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 2px;
+            object-fit: cover;
+        }
+        .dish-name {
+            font-weight: bold;
+        }
+        .price {
+            color: #f1f1f1;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+                font-size: 14px;
+            }
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Menu</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Dish Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://hips.hearstapps.com/hmg-prod/images/grilled-chicken-breast-index-6626cdb057b5b.jpg?crop=0.503xw:1.00xh;0.249xw,0&resize=1200:*" alt="Grilled Chicken"></td>
+                <td class="dish-name">Grilled Chicken</td>
+                <td class="price">$12.99</td>
+            </tr>
+            <tr>
+                <td><img src="https://thefoodcharlatan.com/wp-content/uploads/2020/08/Homemade-Chicken-Fettuccine-Alfredo-10.jpg" alt="Pasta Alfredo"></td>
+                <td class="dish-name">Pasta Alfredo</td>
+                <td class="price">$10.99</td>
+            </tr>
+            <tr>
+                <td><img src="https://www.noracooks.com/wp-content/uploads/2022/06/vegan-caesar-salad-4.jpg" alt="Caesar Salad"></td>
+                <td class="dish-name">Caesar Salad</td>
+                <td class="price">$8.49</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

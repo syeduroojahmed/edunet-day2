@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Alignment vs Text Direction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .alignment-section, .direction-section {
+            margin-bottom: 30px;
+        }
+
+        .example {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .alignment-section .example {
+            font-size: 1.2em;
+        }
+
+        .direction-section .example {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        .left-align {
+            text-align: left;
+            background-color: #f0f8ff;
+        }
+
+        .center-align {
+            text-align: center;
+            background-color: #f0fff0;
+        }
+
+        .right-align {
+            text-align: right;
+            background-color: #fff0f5;
+        }
+
+        .ltr {
+            direction: ltr;
+            background-color: #fff0f8;
+        }
+
+        .rtl {
+            direction: rtl;
+            background-color: #f8f0f8;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Text Alignment and Text Direction Example</h2>
+
+    <div class="alignment-section">
+        <h3>Text Alignment</h3>
+        <div class="example left-align">
+            This text is aligned to the left.
+        </div>
+        <div class="example center-align">
+            This text is aligned to the center.
+        </div>
+        <div class="example right-align">
+            This text is aligned to the right.
+        </div>
+    </div>
+
+    <div class="direction-section">
+        <h3>Text Direction</h3>
+        <div class="example ltr">
+            This text is displayed with a left-to-right direction (LTR).
+        </div>
+        <div class="example rtl">
+            هذا النص يعرض في اتجاه من اليمين إلى اليسار (RTL).
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            display: flex;
+            gap: 15px;
+        }
+        nav label {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav label:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            display: none;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        input[type="radio"]:checked + .container {
+            display: block;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        .product h2 {
+            margin: 0 0 10px;
+        }
+        .product .price {
+            color: green;
+            font-weight: bold;
+        }
+        .product ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce Store</h1>
+    </header>
+    <nav>
+        <label for="electronics">Electronics</label>
+        <label for="furniture">Furniture</label>
+        <label for="clothing">Clothing</label>
+    </nav>
+
+    <input type="radio" id="electronics" name="category">
+    <div class="container">
+        <h2>Electronics</h2>
+        <div class="product">
+            <h2>Smartphone</h2>
+            <p class="price">$499.99</p>
+            <p>A high-quality smartphone with stunning features.</p>
+            <ul>
+                <li>6.5-inch display</li>
+                <li>128GB storage</li>
+                <li>Quad-camera setup</li>
+            </ul>
+        </div>
+    </div>
+
+    <input type="radio" id="furniture" name="category">
+    <div class="container">
+        <h2>Furniture</h2>
+        <div class="product">
+            <h2>Office Chair</h2>
+            <h2>sofa</h2>
+            <p class="price">$89.99</p>
+            <p>Ergonomic office chair with adjustable height and back support.</p>
+            <ul>
+                <li>Comfortable padding</li>
+                <li>360-degree swivel</li>
+                <li>Durable build</li>
+            </ul>
+        </div>
+    </div>
+
+    <input type="radio" id="clothing" name="category">
+    <div class="container">
+        <h2>Clothing</h2>
+        <div class="product">
+            <h2>Men's Jacket</h2>
+            <h2>womens jacket</h2>
+            <p class="price">$59.99</p>
+            <p>A stylish jacket to keep you warm and fashionable.</p>
+            <ul>
+                <li>Water-resistant material</li>
+                <li>Multiple pockets</li>
+                <li>Available in various sizes</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

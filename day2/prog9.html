@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Matrices with Different Alignments</title>
+    <style>
+        /* General container for each matrix */
+        .matrix {
+            display: flex;
+            justify-content: center;  /* Centers images horizontally */
+            margin: 20px 0;
+            border: 2px solid #000;
+            height: 200px; /* Set height for the container */
+            width: 100%; /* Make container responsive */
+        }
+
+        /* Matrix container with specified aspect ratios */
+        .matrix-1 {
+            width: 300px;
+            justify-content: flex-start;  /* Aligns the image to the top */
+        }
+
+        .matrix-2 {
+            width: 300px;
+            justify-content: flex-end;  /* Aligns the image to the bottom */
+        }
+
+        .matrix-3 {
+            width: 300px;
+            justify-content: center; /* Center horizontally */
+            align-items: flex-start; /* Aligns image to the top */
+        }
+
+        .matrix-4 {
+            width: 300px;
+            justify-content: center;  /* Center horizontally */
+            align-items: center;     /* Center vertically */
+        }
+
+        .matrix-5 {
+            width: 300px;
+            justify-content: center;  /* Center horizontally */
+            align-items: flex-end;   /* Aligns image to the bottom */
+        }
+
+        /* Style for each image inside the matrix */
+        .matrix img {
+            width: auto;     /* Maintain image aspect ratio */
+            height: 100%;    /* Image will stretch to the height of the container */
+            object-fit: cover; /* Ensures image fills the container without distorting */
+        }
+
+        /* To ensure that images don't stretch to same width */
+        .matrix img {
+            max-width: 100%;    /* Allow image to maintain its original width */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Matrix 1 (Top Alignment) -->
+    <div class="matrix matrix-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsIUzyk8-CPOQfEhcbH-KojFo4BcZVNp4SSA&s" alt="Image 1">
+    </div>
+
+    <!-- Matrix 2 (Bottom Alignment) -->
+    <div class="matrix matrix-2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNgb86vQD-6bKoSS0TjEC5Klb9qv4cNm6zPpRiz5-R2lz8_Au2uXhHBeYLp5UiF-K1zU&usqp=CAU" alt="Image 2">
+    </div>
+
+    <!-- Matrix 3 (Top Alignment and Center horizontally) -->
+    <div class="matrix matrix-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJueRs7tEkEAI4BLTeFFqErMgrbm9f-0fFV6KvwR0wrbxNUHlnywsuHSP6Ak7pytFxksU&usqp=CAU" alt="Image 3">
+    </div>
+
+    <!-- Matrix 4 (Center Alignment) -->
+    <div class="matrix matrix-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLG9PzteYeWoQKEKmnNalt4ynmLtGusFA2pg&s" alt="Image 4">
+    </div>
+
+    <!-- Matrix 5 (Bottom Alignment and Center horizontally) -->
+    <div class="matrix matrix-5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYcU0HwWWJgg6Kn7irWq4u3DL7VQJMCUAzg&s" alt="Image 5">
+    </div>
+
+</body>
+</html>

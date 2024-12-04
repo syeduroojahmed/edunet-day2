@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color:rgb(235, 231, 229)
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        table {
+            width: 40%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: orangered;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            
+        }
+        th {
+            background-color: #0c0c0b;
+        }
+        img {
+            max-width: 80px;
+            height: 80;
+            border-radius: 2px;
+            object-fit: cover;
+        }
+        .dish-name {
+            font-weight: bold;
+        }
+        .price {
+            color: rgb(226, 231, 226);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Menu</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Dish Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://hips.hearstapps.com/hmg-prod/images/grilled-chicken-breast-index-6626cdb057b5b.jpg?crop=0.503xw:1.00xh;0.249xw,0&resize=1200:*" alt="Dish 1"></td>
+                <td class="dish-name">Grilled Chicken</td>
+                <td class="price">$12.99</td>
+            </tr>
+            <tr>
+                <td><img src="https://thefoodcharlatan.com/wp-content/uploads/2020/08/Homemade-Chicken-Fettuccine-Alfredo-10.jpg" alt="Dish 2"></td>
+                <td class="dish-name">Pasta Alfredo</td>
+                <td class="price">$10.99</td>
+            </tr>
+            <tr>
+                <td><img src="https://www.noracooks.com/wp-content/uploads/2022/06/vegan-caesar-salad-4.jpg" alt="Dish 3"></td>
+                <td class="dish-name">Caesar Salad</td>
+                <td class="price">$8.49</td>
+            </tr>
+            <tr>
+                <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMVFRUVFRUVFRUXFRUXFRUXFRUWFhcVFRcYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGBAQGi0dHyUtLi0tLS0vLS0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstK//AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYBBwj/xABGEAABAwIDBAYGBwYFAwUAAAABAAIDBBEFITESQVFhBhNxgZGhIjJCscHRBxRSU3KS8CMzYoKi4RVjk7LxFoPSNENzo8L/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAmEQACAgEEAQQCAwAAAAAAAAAAAQIRAxIhMUEEEyIycVFhFIGR/9oADAMBAAIRAxEAPwDxRdSKQCJjoTwkIzwT2xncErY6TEwq919xZUbKQFBqxk6JCMlGApmn0VEAmoQ6E5cTwFjCaE9oXE4LUCxwClCY1SBMAe0qZhUDVMwJkKyUJ4C41qSIo6ycE0J7UQEjQulNCcSsYY5RkqRyiclY6GuKaSkU1yQYa4qNxTnFRuSsdDSU0pEpt0BzhKaSkU0lLQTt0lHddQMC7pwkXAFK5rbZaqrZJImiqARY5LgqQNFXDU9rQl0oopyHGW6czNJ7W7l1jUyaEknZO9NSTlhTgCeAk0KSyIBoC6AnALoRMdYFI0LrQpGtRoDYmtUzGprQp2BMIxNTiE7ZXQ1EUYGpzWp4YpGsRNYwBcLVOI13q1jFUtTHBXHRqJ0aAyZTcFG5WntUL2pGh0Vyo3KZwUTgkY6InKMlSuCjISjoaUwpxTSgEakuJIUYkoMFllzY3LiTYK1W4KyJhLpml/2W5+KFR1sjBshx2eFzZHej9CyoDnPkbE1vrE28kXqXewYqD63AYiUrYFqDJh0V2xh0zzlf2fkhnU55C3LgjH3E5rSUY6VTspQrQiK71RVUibZAKVqe2kbwU7YirEcSdIk5FeOhbwVmPD2cFOAGi5IAGpOQUTMS2jswsLyTYagHsGp8kXJIEYzn8S1FhMZ1CtR4NFwRjB+g9fONuR7admpuLEDjxHeVWxkYRSNzmfXzfZY/9nf+KQZAdhJQeRIZYXLu/op/4fSj1nMHa9vzTJjQs/zHaBrMyScgOAvfeVkK7FnSuJY1kTNzWAhoHDaJLnnLirGCOaJYy4nZa8PPE2N/gpSzPpHRDxI9tm8wrDqZ8HXOhc0A2c0AvcwEnYLtkZBwF76ai9wVO0YcNWv/ACFX8VlOH0dFPHYSl7mvZtBzJI5A6SSN1si1rtgAjQuNtVW6W4LSTshnhLqc1ABZvjc8kgxkXsH3Byu3a3EkbKZZXwyb8eL3Vj46nCxqx3+mVbjrMH3i3bE/4BeUYthM8ADngmNxIbK25jcQbFt9WvBBBY4BwINwhRldxKfVMn6MD3mCTB3e3EPxNc33hE6bDcLf6jqd3Y9l/C6+chO7ifFSsq38T4pfUkH+PBn00zorSEXETCOIAIS/6TpPuWflC+dqDHZ4jeOV7T/C4j3LYYL9KNXFYSETN4P1/MM0fUYr8X8HqzuiVJ9y3wCgl6JUn3TfBVej3T+nqbNIMb+BNx3LTkgi4NxxTKbIyxuPJl5uiVL903wQ6bonS/dha+aypTNCaxTFVfReAaMCD1HR6IeytxVm25BaohEKbRjajBoxoENnw5o3LVVjUGqWJGkVjJgKSjaq76YIrK1U5GqbR0RbKRpwkpyEkmw9srPpacC5e89jbBVhh1siTbXkRuKvGvphownvcVFX4gHsAiYWkZaHTvSqxp10SRUjWN2jkPPwVqOsj+0O/JZzbkH2venRzuuAdLi9xzT20JUWapkgOiksp6iqDGhjdkC2TWgWtzVGN9ymg21uqJ5IpOk7LbIxxU5DGtLjkALk8gq3Yoq4Oc0tOgG07nmA1ve4jwTSlpViwxuckgFXYgZX3OTR6reHM8Stl9GnSSmpZy6pZcFtmvA2ix3ZwOmSytdhpY0E6kX8VSdTuaLnJcym7tHe8aUdPQV6S9Jaqqkc6aWTZc4kRlxETG3Oy3ZHomwtny3oGXXsBdxOQyJuTuDd6kbVHQ5jgcx4J7Ay97Fh3FpII7OCIv0Ow6ifNKyJou97g1oJtmTkCTorcrBHOYiQTG9zC4aFzSWkt5XGSgZSNcbtlLSOLb+YKecIkOYkidfO+0QTzzCDjZlkUTQ9LcUvPH676aN/7OMnZtGRGNlp9naawdhv37alfBU4ZJRl4cBtyU0lv3sd9u9hpLG714/WsDYWcF59h9NVgBr4YqiMWAY940O4Oa5rm+NgthBhFN9XdJTNkppBs9bRzSiWGY7jHI0l0bwfVeCHA7rI0K5J9lGg6RbYED2sE79mOdkxHUVVgGtftWLWyWAs/foQ8Btq+JdAm7Vto0T3GzY6lrzC47g2obtBt+D81YwGlEjHQ4hQl9xeKdkkIlaczaTZkAew8dfho6zpJJStdTWE0YAEZfIXgCwIDr3JLb73buCOtxNoUtkeaY90KrKS3Wsbsu9R7Hh7Hdjh8bIIYZW6sut1W4nLI3Ye+7RmBYAeQue9C323hTeZt8F4+Okt2Znrx7TXD9c09jwdCjrupOTrg9gIVd1NStc1z9tzNobbYhsvLd9nOyG5NGdglGu7J8ChkfI0Rgl18rbua+gujdPII2h+eQ2kB6I0WHxMaKcC7gHBzyS70rlodfXIi/O1kVg6VN6wscNlzXFrm55EG1rb00pKjmacnwEMShLDkLg6ILUzEcVoX1Iddut2iRnMaOHd8Qh07mW3XVsc9SOLLDSzOVdQ5CZZLm11p5qUuGVvBDKnDgNQFUmZessDa6EVBvotLWQs3oJVMZuQaHiwNKFUkCISsVZ8KmzoiUUlZMCSSh7KEdOOCl6kcEbh6OVH3R7ywe8qwMAqfuXdxafcUyJuzOiEDULvVM+yjsmDzN9aGQfyGyZFSZ5iyYFgyOInRqmELhuCMshA3JwtwRFbBbS7cArWH0hlkja4es4vd+GIFrR+YyHuV8ZAkgZAk9ysdH4tkyyEZsY1neG3d/W5y5fKlSSO3w47uQKxSm66q2BmG5nS2Qt3d/FBOk0IZkAP0AR8r79dLLU9H23MsvElrT79dMgVjOlFTtSEjQ346C4AKjj3Z1ZHSIMCwwy7b7ZNyHba/wAvFUsSbsuIW5wOl6qhBORcATf+K7suedu5YXFX3ce23h/yqQeqTJTWmCKYlKs7TmjMqvQw7cjG8XAfPyRDGRZ1lV7OiEVabJKPE3DK+Ss1HSGUGzXuF9bG3u171n2OXHOuU1E7NbQ9KJh7bvH3/wB7rUYZjUcto6hrnsc652SAWm1tpt/VJsOWW65v5dG9HMPqLfrv+aDQ0HueuYd0ChqmCamqg6J3Fh22ne17bizgtBh30aU0fpPvK4Zjb9UH8AyPfdeL9Gels1FO50T7Bxu5pza7P2hvzvzzXsOD/SfBI0dbaN39B7Hbu/zUqUSsnkktmZz6ROjTbFwFiF5BUOcwkHUL1/pt0zp3tLWSNcTwN/cvHK6facTzVNmJDVE3MeKGOocGGzbhzRwa9rZWgcgH+HYivSWq/aw1A0mZZ/44rNJ7Sws/KVhWynaZxMUX9LAweTAtTiMm3Qg3zilY8dj7xm/e9p7lOXRaKPQsExe8Ub73MT27X4JCGO8ywrQVbN9wvMOhdTth8RP7yNzBrqRdvmAvT8HlbNAyS2ZaL9tgbeaPjupNEPMh7VJAeq2/ZPghVTPKOJWvkpm7gAhtdTkaZ8l2HnGJrHOd61x3IXJE2+ZWpr9oA3aPBAqmEnMALMeIFnDRoVSlciFRFxVCRvJTZeJVMhXFL1YSSjlBuMSfbPiiFLjEm57vFamk6FUDx6szT/8ALf3hRzdD4WH0HOtzK59n2dNtdDsCx+cOA2yRvBK9AZKyRo22tdlvaD71haKkZGez4Im7FLDI/oIXQKvoOSYZSu1iaObbt9yqy4FAfVc5vgUNpamaa5ijc5o1dkGDte4ho8VTrseghymqo9oexAHTOy3F2TAe8p1KZOUYFjGcIEcZcHtIJY0ixBIc4NPkSe5C43htG4nIyEuPH0ztH3nwQ2q6TsqbsiZKA0OdtyPbclzXMaAxgsM3Xvc6K9jZtGyMW3N+B94XPmbctzs8eKUNux8B6ukG4uuT5f8AHivOsSG3IGj2nNYO82+K9Bx54ZAGg+yM/O3l+r5YbCGbdXHydtH+UE+8BPi2TYMu7o22OHYgDeWXLsB7fFeZVzruXoXSybIDg0Absh/Y9+0F5zUnNPgWxPyGX+i8V6gfwtc7yt2Xz3ruNn0z3qx0Qb6cjt7WADvdf/8AKp4s67j+uHyVH8ycdsYOuuBJIaqpzj2nNEqJ9kLV+kSsdckNUbPPj4q3SVhGW5V8Qboe5VYnoSjaGhPTIJTvuqjk7rFxmZHappUWk7L4f6YH2WMb/SPDUrWYUesgmjvcuidY8wNoeYGZ/usXtftHdtvDL4LUdHp7OHDfbThmfLNCfBsb3JOi1aWSMcDwOvMWXr3QypFpo/sSEgfwu9JtuWyWrw6id1cjm6bL3N8HEDdyW2bi8kIc+JzmuLGEhtto7DtkjMEHJzPJJemaY8oepicT1eWypTMXnlD9ILwf2hafxscw/mZcf0o9T9LopB6W00fab+0Z4su4drmhdayxfZ5ksE10EawN3oFVlnBGGTMlG0x7Xji0gjxCp1VHyVLESM5VBp4eCFy02eQWokw4Ks6iA0CRlYma+pciktAYUko9lZ/S1m5tuxUZukRdosYxrlpOhuEMne+SckU8DduUjV2dmxjmSpKCKynSD+C0M1UC9tmRt9eV5tGONvtEcB4pYji9JTHYgZ9cm06yQHqQ7+CIev33RGbrKyMukcKWhjsAAMnW0a1o9Z3kEKfjDYvQoYhANDM6z6h/PbOUfY1FpLgSLcuQZi1NiFSA6unEEfssldsNt/l0zMz+XvQ9mH0UejZql3O0MXcBd5HgppnC5c4l7jmXOJJPaTqq0lcNyKC2XaYNL2gQxwguaLRggkX2vTcTdx9EZniiWIu2pmD+IZZm2z277kXQfCJtp4PM2yB4DflxRFj/ANs3fstJvmbkkjhc5t4LiyfJnp4lUIkPSqTUXGg7rb+V7H9WQHohFtVJO5rT4uI+Acr3SSTM53+dswed+3yBUPQwWMr9NAD+EOv/ALgrLaBF75ETdKZ7uPAbt2nPy4dyxExzWo6QzXcR29pztfxustLqq4lSIZ3uH+jItFMebQe7/koZiR9I/KyJYKdmneeLjlbgAMz+tUIrDmivkwPbGiqF1uq4F0aqxznVcpSqSt05SMZck1W27fnke8bihwRgi7eN/HTfu3IQ4WJCMTS5JWlT0w9IdqrRohQUznH0Wk2BJsCbCxzNtAkkUjbRWp35k8TfxP8AdH8Lks4HLceemeiz8LSP13IvQu527hfzQmrRsbplqrNp3m9rlpvvzA+N80aMxMbcyDZzAQTdu0y42T7JBAQbErbYI3ttrvB056q5Tv8AQy3EHMZXBGihP4o7MfzaKzcXqG5SFso4TMDj+fJ3mnfX4HZuikgd9uJ223va6zgOwlaP/DA9jXW9ZrT4gFC6vAxuC6X4y5RwLyt6YLdiMrHbcU22R7bCWyZbn6Ejk64R7BfpCcCG1LcvvGjMfjjG7m234SstX4Q9uYQ0QuJt7XDj2c+SaMHEScoy3PbI61sgaQQdobTSDdr2/aY4esPMbwFHKOZXmPRXGjC/qpCepkcNoe1E85CaP7Lhv4jIr0ygku0iQekxxY4jRxGjh2oydCqJFspK0Wj9XXEAmPmpYo7AkZkC/MmwCl6B2e99DI7Y2pWOduu2Pa2gOdjcLAVeISSvD3HQgtA0FjfxWrhjbU7LmvEU7bFknsutoHcO1RvRz2Xr1NlyuA30s6QddJsN9GGL0Yoxk0AZbXMnis5NXqHE2SMfsSsMcmuyfVf/ABRu0I/XJCpptypFJq+Sb9u1UW6itQ2orTuUMsl1VKqifJrOjdSCBc7iDrrY8OaOU8n7V5ub7LQLX+yOG65K8+pJnNzCNUGM29b9d9rhcU8e7PTx5k4pMuYy7zve+/8AQU/R0WhdmPSc73Ae8KnPM2XeOds8rGw9ysxyhkYaCfVse+5+f60L4oC+VgvGZbk2uMx7gbZdqBP1RWvdck9uQ0yKFyaq0Dlzch6kdamaOJJ83fG2SC1Ds0Wldswsb/Dflnlx7fNBpjmtHkM37UhgXQuBJVII6rNOqqs05ubBKwrkINYCBnpfd2Eg8OOqGTs9Mha/DsDaWhz3ucBmWxt2W988tms52a5B6+AOlda1sg3ZvsgAWsL5kczmdTqk1JFVjcjnR7Bn1EgY3TeV9A9BuiggYNtoOVtMrHIheHYRTSg3ifsOG4OIJXonRfGsWYQ1reuF9HbH+4EeaTWh5Yn0zM9OegklPVSNhG01xL4m6Oc0nRl/Wc3Qt13gG6zooZo85IZYwLXL4nsHi5q9kxXppTytMNbTgkEghrusDXDI2cLWPYUEmx2lsGRTVTI7+kCGl1twjdba14uss57Bjjb34PP6iMyAObd2yCXEbh6Iubbr2z9ydSShnr2IGoOV8tCddbI9iEu2XBpeIjo17vScOLrZE69l+9CP+nHP9Nu0Yx6xsSB/MBopqcXsy7hKPuPQcGpdqlgdb1ooz4tBUVVQrV01G1sUbW2s2NgFtLBotbkqdVThel0eDfuZh6yh5LP4jhIO5b6sp0NZhkkr9iJhe7gBoOJOjRzKVtLdlI2+DDVOEmUMe0ftNtsclva2vUk7dQewcV65BAInQwm3WujlmlHAOdEGB3P0UCdVUmGXcXNqKzcxpvFCeZ9pw/Vkz6P6x9RVzTSuLnujcSe17LAcByXNlepqX1/e/P8Ah2Yo6YtfZqzSje1vgEkTMS4jsIfLz0WwmpsEPexPhdspJ7lobG4pcauzqpmNmi+w/O3NjtWnsVWqwGll/wDTz9WfuqjNo5MmbmB2hAo5051UudRcXcXR0vTJe7cixTo1UQ5vjds/bbaSM/8AcZceICCugdwvzGY8kfjxSRn7t7m9hIUFRiZebyMY8/a2QHfmbYq8cs+1ZzyxQ6dAiBPLFYfM07iORs4f1C6jMreA8x8wmbsC2VEGacKhwyuff704lvMeB+S5sN+14gj3XTJCuTXBG6c70zbUxhH2m+Nvel9VPL8zfmmQrkyMzlRXVv6k7h+u5L6i77LvylHYDbZUuutFzYKz9RdwPgV2OmIINjlrzG9ZvYCq9x8dM1p9O9+BFlehnaNMldxrHTPExj6du0zITBpbI4fxgGxd/ELXQDqnnRj/AMp+ShUpcnZrjD4hs1gOpJ7c06EbR9EXPJB20U50ilPZG/5KxFhlZ7MFR3RS/AIekb+QjW4bgMryLbA/E/8A8breYF0bqmZtqdjK2Re4Z5aXYvJaakxIerHUt7QW/wC6yKU8+Kt1laznJUUzbdt33RWNISWeT7PUqP6NYdZah7uNtlt/9yO0nQnD49WB3NznH428l46MZrgPTxGjZ/3g8/8A1scoZsav+9xhx5QU8rvM9WEVj/QjyyfMj3htLh8A2tiBlvaLWDzKEYx9I9FC0iJ3XP0DWH0P5n6AdlzyXh0uJYfe7vr1S7i98UTT5PcPFIdKoWfuKCnadzpjJUO7f2h2R4JvTf4F1x7bZ7R0NqXTUbHm13OlsAMgOsdYNHAaAcFaxJzIxtTSRxDjI9rPI5nuC8Lq+nde8bP1h0bdNiINiaBwAYAgEtQ552nOLidSSSfEqytJI5pRTk5M9hxbpth8V9kyVLh7MY6uPvkdmR2ALHYz9INVO0xx7NNCf/bhu2/436uWNBTmlbbkZfovQvuvS/orYeskP+WB4uHyXmFO5et/RXTFrZHOyJ2R2AXyXPmfH2XxLlm8Ll1cLeSSNi0fMT1wLhKQWkhos6LjTw/Wi4Zu5SBNewFIVInPUbnJzorb1G4Hh4JkkIzhKYSk5yaSqJE2zhK5dJJMkKK6V0kkQCXQ48T4riQRMSioeNHuH8x+aeK6X72T87vmq6SwC2MSm++l/wBR/wA13/FJ/v5f9R/zVRJYxYdXynWWQ/zu+aifM46uce1xKYksY5ZdASSQMdXQVy6SJh104FMuldYBJdIFca0nQEq3Fh7zmfRHiUDFcFWKaBz/AFRlxOn91epMMF9Lnnn4BF6eiKDYUiPCsM2SDmXcTbyFsl7D0No+rhudXa/BYrAsLc5wsL8eS9GpWlrbEALnl7pHSvbEsPfmkq5JSTkT5r2kttMsuhqYJI2RdJTA1OAS6RtREQkArFk3YWo2oruHJRGFEmUh3rj4DwRM3YMMSYWK86JN6pMmK0UrFJWSzguGMo6haKy6rAiJ3LopyjZqKqStijKd9RKNgKaSvNw8qcYSd61mBV0ros3C07/CStYAQuhpRcYapWYcsYCthcdymZQuK0ENEBqrsdI3csCzNx4Ud91ep8JbwWg+pG2hzTWwHgfNCzbg5tJbIDyU4h5ItDR7VrB3j+rK5Dg5Jz+B7krkkOoNgiCmvuA7FpcHwfaIBF0TwzoyTqQO260lHhTYhmb9hIHkptuXBRJR5JMKw0RjQBXZJALoVUNYON/xO+JVR9YRlu7UYwoVysKmVJADWn7XuST0JZ5LBhsQ/eSdzVYdS0lvb7QfmgIqUnVClpf5OjUvwEZaGP2ZT/M34hRih4Pb33HwVHrimyVVu1MrFdBP/DX6jYd2PbfwJBUIjsbEWI1Byt2hBXvJNyblE6St2wGSnT1X6ubyPFvJF2hdmXmOA4KQTt3Z910NlaWkg6jnrzB4JoeiKE3lp1Huv5KHq2nd3DL3qoJ7aZ+a66oJ+Sxi6Ym2yFvNRfVxqb+ChjkIUjHnj56ogJWQt3DyT20ijL3HffkkKhwPDv8AlmiYeYLf2TQAmGc31Pn8U4yk6+4LGLUMIV2OInd+u1CxMeKsQzkb/NYARbG3kO8fJQPy3W52yUfWX4LpfcWstYGh8bQ7h/zkpmUunDjl7lXjdb/i6sxynLJBthSQ9oAVqGEnclSxhxtbP9AX5ZrQYZSNaL5E3353FkHJjKKK9LhpIudONiicGCX17UaoqbaGYA7LZohHCBkLA9vuQSZnJAqlwRg9a6LUtHC3QA9qnYDoSfIqvOAM8r8bBFQQrmy2/YtkAqVQ8cfPy1VCee+ZIPcgmIVDQNH/AMpTqIl2EKuptq8ITPW8Cs/XVsYJ2TI0nftg+I3oWa249cE8CCD+YIWOomqNYeKSxgxG28+SSFh0GWCeuJIDIcq0mqSSKMzgRDCmjaGSSSEgw5CnSMZx/hPvQclJJLDgOT5MRSBSSTkzoKkiKSSxiUuNky/vSSRMWhr4K00e8pJJQjJdfBNKSSYAlcp9EklmZFmQZd6fEkksjFiA5o7hLztDM6fEpJJXyFcGumHooZh8hJNyTnx7VxJN0KaKnPuCqYqfQd2JJJkIUDuVOp1SST9EjGwtBJuN/wA1OxoDXWAGW7JJJTx8HRl5M/KcykkkgUR//9k=" alt="Dish 4"></td>
+                <td class="dish-name">Chocolate Lava Cake</td>
+                <td class="price">$6.99</td>
+            </tr>
+            <tr>
+                <td><img src="https://pbs.twimg.com/media/FNAUTtaakAkaUV9.jpg" alt="Dish 5"></td>
+                <td class="dish-name">Prawns</td>
+                <td class="price">$16.99</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
